@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cclock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="時鐘" Height="450" Width="800" Icon="/clock.png">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="706*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="81" Margin="62,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="641" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Height="81" Margin="62,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="347" FontSize="48" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name="txtWeekDay" HorizontalAlignment="Left" Height="81" Margin="341,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" FontSize="48" HorizontalContentAlignment="Center" Grid.Column="2"/>
+        <Button x:Name="btnSetAlert" Content="設定鬧鐘" HorizontalAlignment="Left" Height="42" Margin="62,243,0,0" VerticalAlignment="Top" Width="100" FontSize="20" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="btnCancelAlert" Content="取消鬧鐘" HorizontalAlignment="Left" Height="42" Margin="94,243,0,0" VerticalAlignment="Top" Width="100" FontSize="20" Grid.Column="2"/>
+        <ComboBox x:Name="cmbHour" HorizontalAlignment="Left" Height="35" Margin="211,243,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.523,-0.093" Grid.Column="2"/>
+        <ComboBox x:Name="cmbMin" HorizontalAlignment="Left" Height="35" Margin="278,243,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.523,-0.093" Grid.Column="2"/>
+        <MediaElement x:Name="meSound" HorizontalAlignment="Left" Height="139" Margin="449,243,0,0" VerticalAlignment="Top" Width="161" Grid.Column="2" Source="/alert (1).wav" Volume="1"/>
+
     </Grid>
 </Window>

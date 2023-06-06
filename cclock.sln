@@ -5,6 +5,11 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cclock", "cclock.csproj", "{CF7039D6-C926-4D73-AE21-8765565B992C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "方案項目", "方案項目", "{5C71D65F-B0A0-47B8-8AA4-D24A6D0F6158}"
+	ProjectSection(SolutionItems) = preProject
+		..\Clock\clock.png = ..\Clock\clock.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
